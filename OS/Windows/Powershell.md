@@ -34,15 +34,15 @@ Circular            20971520             ForwardedEvents
 ```powershell
 Get-WinEvent -FilterHashtable @{Logname='system';level='2'}
 ```
+* Logname: 是Get-WinEvent -ListLog "*"查询出来的LogName
+* level说明:
 ```text
-Logname: 是Get-WinEvent -ListLog "*"查询出来的LogName
-level:
-|  No  | Level |
-| ---  |  ---  |
-|  1   |  关键  |
-|  2   |  错误  |
-|  3   |  警告  |
-|  4   |  信息  |
+|  No | Level |
+| --- | ----- |
+|  1  |  关键  |
+|  2  |  错误  |
+|  3  |  警告  |
+|  4  |  信息  |
 ```
 ## 命令结果输出内容格式化
 ### 格式化为json
