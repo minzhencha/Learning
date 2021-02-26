@@ -128,7 +128,7 @@ $a
 * 替换后示例命令:
 ```powershell
 $a=Get-EventLog application -after (get-date).adddays(-1) | Where-Object{($_.EntryType -eq "error") -or ($_.EntryType -eq "warning")} | select EventID,EntryType,TimeGenerated,Source | Sort-Object -Property Source | Sort-Object -Property source -Unique | ConvertTo-Json
-$a=$a -replace "\\\/Date\(" -replace "\)\\\/"
+$a=$a -replace "\\\/Date\(" -replace "\)\\\/" # 把双引号内的内容替换为空
 $a
 ```
 * 替换后输出内容:
