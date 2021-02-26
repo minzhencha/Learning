@@ -38,7 +38,7 @@ Get-WinEvent -FilterHashtable @{Logname='system';level='2'}
 Logname: 是Get-WinEvent -ListLog "*"查询出来的LogName
 level:
 |  No  | Level |
-| :-:  |  :-:  |
+| ---  |  ---  |
 |  1   |  关键  |
 |  2   |  错误  |
 |  3   |  警告  |
